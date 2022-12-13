@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col mb-3">
+    <div class="card mb-3 box-shadow">
+      <img class="card-img-top" src={{productItem.imageUri}} alt="Card image cap">
+      <div class="card-body">
+        <strong class="card-text">{{productItem.description}}</strong>
+        <p class="card-text">{{productItem.price | currency:'USD'}}</p>
+        <p class="card-text">Stock: {{productItem.inStockCount}}</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-secondary" (click)="handleBuy()">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col mb-3">
+    <div class="card mb-3 box-shadow">
+      <img class="card-img-top" src={{productItem.imageUri}} alt="Card image cap">
+      <div class="card-body">
+        <strong class="card-text">{{productItem.description}}</strong>
+        <p class="card-text">{{productItem.price | currency:'USD'}}</p>
+        <p class="card-text">Quantity: {{quantityPurchased}}</p>
+        <p class="card-text">Total: {{totalAmount | currency:'USD'}}</p>
+      </div>
+    </div>
+  </div>
+</div>

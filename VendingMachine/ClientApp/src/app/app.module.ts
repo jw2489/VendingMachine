@@ -9,6 +9,11 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { ProductsComponent } from './products/products.component';
+import { ProductItemComponent } from './products/product-item/product-item.component';
+import { BuyComponent } from './buy/buy.component';
+import { BuyItemComponent } from './buy/buy-item/buy-item.component';
+import { LedgerComponent } from './ledger/ledger.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +21,12 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     NavMenuComponent,
     HomeComponent,
     CounterComponent,
-    FetchDataComponent
+    FetchDataComponent,
+    ProductsComponent,
+    ProductItemComponent,
+    BuyComponent,
+    BuyItemComponent,
+    LedgerComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -26,6 +36,10 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
+      { path: 'products', component: ProductsComponent },
+      { path: 'product-item', component: ProductItemComponent },
+      { path: 'buy/:productID', component: BuyComponent },
+      { path: 'buy-item', component: BuyItemComponent },
     ])
   ],
   providers: [],
